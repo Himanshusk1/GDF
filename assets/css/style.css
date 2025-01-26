@@ -1,0 +1,270 @@
+:root {
+    --yellow: #ffbd07;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+/* font styles */
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+/* font styles */
+
+.new-font {
+    font-family: "Open Sans", sans-serif !important;
+    /* font-optical-sizing: auto; */
+    /* font-weight: <weight>; */
+    font-style: normal;
+    /* font-variation-settings:
+      "wdth" 100; */
+}
+
+.bg-white , body {
+    background-color: #fffcf2 !important;
+}
+
+.bg-yellow {
+    background-color: #fecc43;
+}
+.text-success {
+    color: rgb(7, 86, 7) !important;
+    
+}
+.text-green {
+    color: #4c9576 !important;
+    
+}
+.bg-success {
+    background-color: #4c9576 !important;;
+}
+.bg-orange {
+    background-color: rgb(242, 86, 8) !important;;
+}
+.text-orange {
+    color: rgb(242, 86, 8) !important;;
+}
+.text-success-light  {
+    color: rgb(66, 199, 66) !important;;
+}
+.text-orange-light  {
+    color: rgb(244, 114, 49) !important;;
+}
+
+.shadow-yellow:hover {
+    box-shadow: 3px 4px 60px 2px var(--yellow) !important;
+}
+.text-justify {
+    text-align: justify !important;
+}
+
+
+
+* {
+    transition: all 0.1s linear !important;
+}
+
+*::-webkit-scrollbar {
+    width: 5px !important;
+    height: 5px !important;
+    border-radius: 5px !important;
+    background-color: grey !important;
+}
+
+body {
+    width: 100vw !important;
+}
+
+
+/* CSS for Navbar of the website... */
+nav{
+    padding: 5px 0px !important;
+}
+.header-logo a img{
+    width: 250px;
+}
+
+.hover-effect:hover{
+    color: #4c9576 !important;
+}
+
+.navbar-links::after {
+    content: "";
+    justify-self: start;
+    width: 0%;
+    height: 1px !important;
+    background-color: #4c9576 !important;
+    transition: all 0.2s linear !important;
+}
+.navbar-links-box:hover > .navbar-links::after {
+    width: 100% !important;
+}
+/* CSS for Navbar of the website... */
+
+
+
+/* Main index page CSS... */
+.times-roman-font {
+    font-family: 'Times New Roman', Times, serif !important;
+}
+
+.main-image-slider {
+    height: 80vh !important;
+}
+
+.reached-numbers-boxes {
+    height: 200px !important;
+}
+/* Main index page CSS... */
+
+
+/* Our Partners Section */
+/* Our Partners Section */
+
+
+/* CSS for Footer of th ewebsite... */
+.social-media-links a:hover, .social-media-links a:active {
+    transition: all 0.3s linear !important;
+    background-color: rgba(196, 203, 233, 0.516) !important;
+}
+/* CSS for Footer of th ewebsite... */
+
+
+@media screen and (min-width: 580px) {
+    
+    .responsive-scroll-bar {
+        transform: translateX(-20%) !important;
+    }
+}
+@media screen and (max-width: 1000px) {
+    
+    .responsive-navbar {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .main-image-slider {
+        height: 40vh !important;
+    }
+
+    .font-h1 {
+        font-size: 2.5rem !important;
+    }
+
+    .reached-numbers-boxes {
+        max-width: 20% !important;
+        font-size: x-small !important;
+        max-height: 140px !important;
+    }
+    .our-reach-icons-images {
+        max-width: 40px !important;
+    }
+    .reached-nums-data {
+        font-size: small !important;
+    }
+
+    .founders-message-data {
+        font-size: small !important;
+    }
+
+    .why-gurukul-cards-responsive, .why-gurukul-cards {
+        max-width: 100px !important;
+        max-height: 80px !important;
+        font-size: small !important;
+        padding: 1px !important;
+    }
+    .why-gurukul-cards-responsive img {
+        max-width: 100px !important;
+        max-height: 80px !important;
+        font-size: small !important;
+        
+    }
+    .text-heading-small {
+        font-size: .51rem !important;
+        font-weight: 800;
+    }
+}
+@media screen and (max-width: 500px) {
+
+    .font-h1 {
+        font-size: 2rem !important;
+    }
+    .font-h3 {
+        font-size: 1.3rem !important;
+    }
+
+    .organization-name {
+        display: flex !important;
+        gap: 5px !important;
+    }
+
+    
+
+    .about-gurukul-img {
+        max-width: 320px !important;
+    }
+
+    .why-gurukul-cards {
+        max-width: 100px !important;
+    }
+    
+    .footer-logo-responsive {
+        width: 200px !important;
+    }
+
+}
+
+/* This is the css of Extra page */
+.row {
+    row-gap: 10px;
+}
+
+.wp {
+    width: 350px;
+}
+
+.dp {
+    width: 350px;
+    margin-bottom: 40px;
+}
+
+.card {
+    padding: 10px !important;
+    width: 18rem;
+}
+
+.img {
+    border-radius: 900px !important;
+    width: 90px;
+    height: 90px;
+}
+
+.patron{
+    max-width: 400px;
+}
+
+.patronImg {
+    border-radius: 900px !important;
+    width: 170px;
+    height: 170px;
+}
+
+.Patron-text {
+    width: 480px;
+}
+
+.Tre {
+    border-radius: 900px !important;
+    width: 170px;
+    height: 170px;
+}
+.line{
+    height: 2px;
+    width: 100%;
+    color: red;
+    background: #ccc7c7a7;
+    box-shadow: #aba48c 2px 1px;
+}
