@@ -62,4 +62,4 @@ This project is licensed under the MIT License.
 
 ## 🙌 Acknowledgements
 
-Thanks to **GirlScript Summer of Code** for the opportunity to contribute.
+Thanks to **GirlScript Summer of Code 2025** for the opportunity to contribute.
