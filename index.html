@@ -18,7 +18,7 @@
 </head>
 
 <body class="overflow-x-hidden">
-    <?php include "_header.php" ?>
+    <div id="header"></div>
 
     <main class="container-auto ">
         <!-- image slider section -->
@@ -626,13 +626,29 @@ Amity University</p>
 
 
     <!--  -->
-    
+    <div id="footer"></div>
 
-
-
-    <?php include "_footer.php" ?>
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
+    <script>
+    // Dynamically load the header and footer from PHP files
+    const loadComponent = (selector, url) => {
+      fetch(url)
+        .then(res => {
+          if (!res.ok) throw new Error(`HTTP error! status: ${res.status}`);
+          return res.text();
+        })
+        .then(html => {
+          document.querySelector(selector).innerHTML = html;
+        })
+        .catch(err => {
+          console.error(`Could not load ${url}:`, err);
+        });
+    };
+
+    loadComponent('#header', '_header.html');
+    loadComponent('#footer', '_footer.html');
+  </script>
 </body>
 
 </html>

@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <?php include "_header.php" ?>
+    <div id="header"></div>
     <main>
         <div class="container text-center mt-5">
             <div class="row d-flex justify-content-center px-2">
@@ -178,7 +178,27 @@
             </div>
         </div>
     </main>
-    <?php include "_footer.php" ?>
+    <div id="footer"></div>
+    <script>
+    // Function to load external components
+    function loadComponent(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error(`Error loading ${file}: ${response.status}`);
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    }
+
+    // Load header and footer
+    loadComponent('header', '_header.html');
+    loadComponent('footer', '_footer.html');
+  </script>
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 

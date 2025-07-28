@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gurukul Dream Foundation - Our Achievements</title>
+  <meta name="description" content="Welcome to Gurukul Dream Foundation...">
+  <meta name="keywords" content="Gurukul Dream Foundation, youth, skills, empowerment">
+  <link rel="icon" href="./favicon.ico" type="image/x-icon" />
+  <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+</head>
+<body class="overflow-x-hidden">
+
+  <!-- Header placeholder -->
+  <div id="header"></div>
+
+  <!-- Your page content -->
+  <main class="container py-5">
+    <h1 class="text-center mb-4">Our Achievements</h1>
+    <p class="text-center">Here are some of the milestones we've proudly reached in our journey to empower youth in Tier 2/3 cities.</p>
+    <!-- You can add more sections or cards here -->
+  </main>
+
+  <!-- Footer placeholder -->
+  <div id="footer"></div>
+
+  <!-- Scripts -->
+  <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Function to load external components
+    function loadComponent(id, file) {
+      fetch(file)
+        .then(response => {
+          if (!response.ok) throw new Error(`Error loading ${file}: ${response.status}`);
+          return response.text();
+        })
+        .then(data => {
+          document.getElementById(id).innerHTML = data;
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    }
+
+    // Load header and footer
+    loadComponent('header', '_header.html');
+    loadComponent('footer', '_footer.html');
+  </script>
+</body>
+</html>
