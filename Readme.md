@@ -21,10 +21,6 @@ This is the official webpage of Gurukul Dream Foundation.
 ├── _footer.html → Shared footer
 └── favicon.ico
 
-markdown
-Copy
-Edit
-
 ## 🚀 Getting Started
 
 1. Clone this repo  
