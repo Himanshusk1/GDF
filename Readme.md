@@ -2,25 +2,6 @@
 
 This is the official webpage of Gurukul Dream Foundation.
 
-## 📁 Project Structure
-
-├── assets/
-│ ├── bootstrap/ → Bootstrap files
-│ ├── css/ → Custom styles
-│ ├── images/ → Static images
-│ └── js/ → Scripts
-├── index.html → Homepage
-├── What-We-Do.html → Mission & Goals
-├── Our-Achievements.html → Past Milestones
-├── Donate.html → Donation Page
-├── Volunteer.html → Volunteer with Us
-├── The-Team.html → Meet the Team
-├── Contacts.html → Contact Form
-├── supportUs.html → Other Ways to Help
-├── _header.html → Shared header
-├── _footer.html → Shared footer
-└── favicon.ico
-
 ## 🚀 Getting Started
 
 1. Clone this repo  
