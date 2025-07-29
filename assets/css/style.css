@@ -23,6 +23,103 @@
       "wdth" 100; */
 }
 
+body, html {
+    font-family: 'Inter', 'Open Sans', Arial, sans-serif !important;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #222;
+    background-color: #fffcf2 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', 'Open Sans', Arial, sans-serif !important;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 0.7em;
+    line-height: 1.2;
+}
+
+main, .container, .container-fluid {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+section, .Our-Work, .Key-contributions, .Testimonials, .our-parteners-section {
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+}
+
+.card {
+    border-radius: 1.1rem;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+    border: none;
+    padding: 1.5rem 1rem;
+    background: #fff;
+}
+
+.btn, .btn-warning, .btn-outline-warning {
+    font-family: 'Inter', 'Open Sans', Arial, sans-serif !important;
+    font-weight: 600;
+    border-radius: 2rem;
+    padding: 0.7rem 2.2rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.01em;
+}
+
+
+.reached-numbers-boxes {
+    margin: 0.7rem 0.7rem;
+    padding: 1.2rem 0.7rem !important;
+    border-radius: 1rem;
+    background: #fecc43;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}
+
+
+.testimonials-section, #testimonials-section {
+    gap: 2.5rem !important;
+}
+
+
+.Our-Work, .Key-contributions, .Testimonials, .our-parteners-section {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.04);
+    padding: 2.5rem 1.5rem;
+}
+
+
+.shadow-yellow, .card.shadow-yellow {
+    box-shadow: 0 2px 16px 0 #fecc43 !important;
+}
+
+
+.libre-baskerville-regular {
+    font-family: "Libre Baskerville", serif !important;
+}
+
+
+.times-roman-font {
+    font-family: 'Inter', 'Open Sans', Arial, sans-serif !important;
+}
+
+
+.btn:hover, .btn-warning:hover, .btn-outline-warning:hover {
+    filter: brightness(0.95);
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+}
+
+
+.carousel-item img {
+    border-radius: 1.2rem;
+}
+
+
+.our-parteners-section img {
+    border-radius: 1.2rem !important;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.07);
+}
+
 .bg-white , body {
     background-color: #fffcf2 !important;
 }
