@@ -1,6 +1,22 @@
 let reachNums = document.getElementsByClassName('reached-nums-data');
 let isAlreadyScrolled = false;
 
+
+ function toggleMode() {
+    const body = document.body;
+    const toggleBtn = document.getElementById('darkModeToggle');
+
+    body.classList.toggle('dark-mode');
+
+    if (body.classList.contains('dark-mode')) {
+      localStorage.setItem('theme', 'dark');
+      toggleBtn.textContent = '🌙 Dark Mode';
+    } else {
+      localStorage.setItem('theme', 'light');
+      toggleBtn.textContent = '☀️ Light Mode';
+    }
+  }
+
 const loadAllReachedValues = async()=> {
     for(let i = 0; i < reachNums.length; i++) {
         let e = reachNums[i], inVal = 0;
