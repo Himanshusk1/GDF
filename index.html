@@ -625,8 +625,199 @@ Amity University</p>
     </main>
 
 
-    <!--  -->
-    <div id="footer"></div>
+    <!-- FOOTER  -->
+    <!-- Enhanced Footer Layout with Logo Left, Quick Links, Contact, Social, Form -->
+<div class="footer-wrapper bg-yellow mt-5">
+  <style>
+    .footer-wrapper {
+      background-color: #ffd700;
+      color: #1e1e1e;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .footer-wrapper a {
+      color: #333;
+      text-decoration: none;
+    }
+    .footer-wrapper a:hover {
+      color: #007bff;
+    }
+    .footer-wrapper h5,
+    .footer-wrapper h3 {
+      font-weight: 700;
+    }
+    .follow-us-list h5 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.follow-us-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.follow-us-list li {
+  margin-bottom: 1rem;
+}
+
+.follow-us-list a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000;
+}
+
+.follow-us-list a img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #fff;
+  padding: 5px;
+  margin-right: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.follow-us-list a:hover img {
+  transform: scale(1.1);
+}
+
+    .form-control {
+      border-radius: 0.5rem;
+    }
+    .btn-primary {
+      background-color: #198754;
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: #157347;
+    }
+    .scroll-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      color: #f0ad4e;
+      background: #fff;
+      border-radius: 50%;
+      padding: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .footer-logo {
+      max-width: 140px;
+    }
+    .footer-description {
+      font-size: 0.875rem;
+      color: #444;
+      max-width: 240px;
+    }
+    .quick-links ul {
+      list-style: none;
+      padding: 0;
+    }
+    .quick-links ul li {
+      margin-bottom: 0.5rem;
+    }
+  </style>
+
+  <div class="container py-5">
+    <footer class="row row-cols-1 row-cols-md-5 g-4 align-items-start">
+      <!-- Logo & Desc -->
+      <div class="col">
+        <img src="./assets/images/gdf-logo.png" alt="GDF Logo" class="img-fluid footer-logo mb-2">
+        <p class="footer-description">Gurukul Dream Foundation is dedicated to transforming youth through education and empowerment initiatives across India.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="col quick-links">
+        <h5>Quick Links</h5>
+        <ul>
+          <li><a href="./">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./donate.html">Donate</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col">
+        <h5>Contact Us</h5>
+        <ul class="list-unstyled">
+          <li class="mb-2 d-flex align-items-center gap-2">
+            <span>📞</span>
+            <a href="tel:+918269250197">+91 82692 50197</a>
+          </li>
+          <li class="d-flex align-items-center gap-2">
+            <span>✉️</span>
+            <a href="mailto:info@gurukuldreamfoundation.org">email here</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="follow-us-list">
+  <h5>Follow Us</h5>
+  <ul>
+    <li>
+      <a href="https://twitter.com/DreamGurukul?s=08" target="_blank">
+        <img src="./assets/images/logoes/twitter.webp" alt="Twitter">
+        <span>Twitter</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.facebook.com/Gurukul-Dream-Foundation-106034151488777/" target="_blank">
+        <img src="./assets/images/logoes/facebook.png" alt="Facebook">
+        <span>Facebook</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://instagram.com/gurukuldreamfoundation?utm_medium=copy_link" target="_blank">
+        <img src="./assets/images/logoes/instagram.avif" alt="Instagram">
+        <span>Instagram</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://www.linkedin.com/company/gurukul-dream-foundation" target="_blank">
+        <img src="./assets/images/logoes/linkedin.png" alt="LinkedIn">
+        <span>LinkedIn</span>
+      </a>
+    </li>
+    <li>
+      <a href="https://youtu.be/M2y2MtGPANQ" target="_blank">
+        <img src="./assets/images/logoes/youtube.jpg" alt="YouTube">
+        <span>YouTube</span>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+      <!-- Contact Form -->
+      <div class="col">
+        <h3>Get in Touch</h3>
+        <form action="./assets/email.php" method="POST">
+          <input type="text" name="name" class="form-control my-2" required placeholder="Name">
+          <input type="number" name="mobile" class="form-control my-2" required placeholder="Phone No.">
+          <input type="email" name="email" class="form-control my-2" required placeholder="Email">
+          <textarea name="message" class="form-control my-2" required placeholder="Drop a message..." style="height: 100px;"></textarea>
+          <button class="btn btn-primary mt-2" type="submit">Send</button>
+        </form>
+      </div>
+    </footer>
+
+    <hr>
+    <p class="text-center fw-bold">Copyright &copy; 2024 | Gurukul Dream Foundation. All Rights Reserved.</p>
+  </div>
+
+  <!-- Scroll to Top -->
+  <a class="scroll-to-top" href="#" title="Go to Top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-caret-up-square-fill" viewBox="0 0 16 16">
+      <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm4 9h8a.5.5 0 0 0 .374-.832l-4-4.5a.5.5 0 0 0-.748 0l-4 4.5A.5.5 0 0 0 4 11"/>
+    </svg>
+  </a>
+</div>
+
 
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
