@@ -49,11 +49,11 @@ const changeTestimonialPosition = (val)=> {
 }
 changeTestimonialPosition(200);
 btnLeft.addEventListener('click', (e)=> {
-    changeTestimonialPosition(-350);
+    changeTestimonialPosition(350);
 });
 
 btnRight.addEventListener('click', (e)=> {
-    changeTestimonialPosition(350);
+    changeTestimonialPosition(-350);
 });
 // Testimonials Script...
 
