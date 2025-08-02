@@ -1,0 +1,156 @@
+/* 🌞 Light Mode */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --header-bg: #f9f9f9;
+  --nav-link-color: #000000;
+  --section-bg: #ffffff;
+  --button-bg: #e0e0e0;
+  --button-text: #000000;
+}
+
+/* 🌙 Dark Mode */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --header-bg: #1e1e1e;
+  --nav-link-color: #ffffff;
+  --section-bg: #1a1a1a;
+  --button-bg: #333333;
+  --button-text: #ffffff;
+}
+
+/* Apply Theme to Whole Page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header, main, section, footer {
+  background-color: var(--section-bg);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Navbar */
+header {
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--header-bg);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: var(--nav-link-color);
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* 🌙 Floating Dark Mode Button */
+.theme-btn {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1); /* Light background for light mode */
+  backdrop-filter: blur(4px);
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+  z-index: 2000;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-btn:hover {
+  transform: scale(1.15);
+}
+
+
+/* Buttons */
+button {
+  background-color: var(--button-bg);
+  color: var(--button-text);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* 🌙 Image Dimming in Dark Mode */
+[data-theme="dark"] img {
+  filter: brightness(0.8);
+  transition: filter 0.3s ease;
+}
+
+/* Change background for dark mode */
+[data-theme="dark"] .theme-btn {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+/* 🌙 Preserve Brand Colors */
+[data-theme="dark"] h1,
+[data-theme="dark"] h2 {
+  color: inherit !important;  /* keep original brand colors */
+}
+
+/* Only make paragraph and normal text white */
+[data-theme="dark"] p,
+[data-theme="dark"] li,
+[data-theme="dark"] span,
+[data-theme="dark"] a {
+  color: #ffffff !important;
+}
+
+/* Keep Logo Colors Bright */
+[data-theme="dark"] header img,
+[data-theme="dark"] .logo img {
+  filter: brightness(1.3) !important;
+}
+
+/* Fix Buttons */
+[data-theme="dark"] button,
+[data-theme="dark"] .btn {
+  background-color: #333 !important;
+  color: #fff !important;
+  border: 1px solid #fff !important;
+  transition: all 0.3s ease;
+}
+/* 🌙 Fix Header & Navbar */
+[data-theme="dark"] header,
+[data-theme="dark"] nav,
+[data-theme="dark"] .navbar,
+[data-theme="dark"] .top-header {
+  background-color: #181818 !important; /* soft dark gray */
+  color: #ffffff !important;
+}
+
+[data-theme="dark"] nav a,
+[data-theme="dark"] .navbar a,
+[data-theme="dark"] .menu a {
+  color: #ffffff !important;
+}
+
+/* Keep Logo Background Transparent */
+[data-theme="dark"] header img,
+[data-theme="dark"] .logo img {
+  background: transparent !important;
+  filter: brightness(1.1) !important;
+}
