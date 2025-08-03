@@ -360,114 +360,68 @@
         </div>
 
 
-        <div class="container-fluid bg-white text-center Testimonials overflow-x-hidden  pt-2 pb-5 " id="The-Team">
-            <h2 class="text-green h1 libre-baskerville-regular">Active Members</h2>
-            <br>            
-            
-            <marquee behaviour="scroll" direction="left" id="our-Team-member-section" class="d-flex  overflow-x-hidden justify-content-center md-3 gap-5">
-            <div style="row-gap: 10px;"  class="our-Team-member-section d-flex justify-content-center align-items-beween">
-            
-                    
-                    <div style="width: 200px;" class="col mx-3">
-                        <div class="card w-100 text-white  d-flex flex-column align-items-center justify-content-center bg-success" style="padding: 10px !important; width: 18rem;">
-                            <div>
-                                <img style="border-radius: 50%; width: 150px;"
-                                    src="./assets/images/members/himanshu.jpg"
-                                    class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body text-center">
-                                <b>Himanshu Agrawal</b>
-                                <!-- <p>Frontend Developer</p> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div style="width: 200px;" class="col mx-3">
-                        <div class="card w-100 text-white  bg-success d-flex flex-column align-items-center justify-content-center" style="padding: 10px !important; width: 18rem;">
-                            <div>
-                                <img style="border-radius: 50%; width: 150px;"
-                                    src="./assets/images/members/jyesh.jpg"
-                                    class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body text-center">
-                                
-                                <b>Jayesh Shrivastava</b>
-                                <!-- <p>Frontend Developer</p> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div style="width: 200px;" class="col mx-3">
-                        <div class="card w-100 text-white  d-flex bg-success flex-column align-items-center justify-content-center" style="padding: 10px !important; width: 18rem;">
-                            <div>
-                                <img style="border-radius: 50%; width: 150px;"
-                                    src="./assets/images/members/aparna.jpg"
-                                    class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body text-center">
-                                <!-- <br> -->
-                                <b>Aparna Sharma</b>
-                                <!-- <p>Frontend Developer</p> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div style="width: 200px;" class="col mx-3">
-                        <div class="card w-100 text-white  d-flex flex-column align-items-center justify-content-center bg-success" style="padding: 10px !important; width: 18rem;">
-                            <div>
-                                <img style="border-radius: 50%; width: 150px;"
-                                    src="./assets/images/members/arpit.jpg"
-                                    class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body text-center">
-                                <!-- <br> -->
-                                <b>Arpit Gupta</b>
-                                <!-- <p>Frontend Developer</p> -->
-                            </div>
-                        </div>
-                    </div>
-                    <div style="width: 200px;" class="col mx-3">
-                        <div class="card w-100 text-white  bg-success d-flex flex-column align-items-center justify-content-center" style="padding: 10px !important; width: 18rem;">
-                            <div>
-                                <img style="border-radius: 50%; width: 150px;"
-                                    src="./assets/images/members/mohit.jpg"
-                                    class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body text-center">
-                                <!-- <br> -->
-                                <b>Mohit Singh</b>
-                                <!-- <p>Frontend Developer</p> -->
-                            </div>
-                        </div>
-                    </div>
-                    <!-- <div style="width: 200px;" class="col mx-3">
-                        <div class="card w-100 text-white d-flex bg-success flex-column align-items-center justify-content-center" style="padding: 10px !important; width: 18rem;">
-                            <div>
-                                <img style="border-radius: 50%; width: 150px;"
-                                    src="./assets/images/members/akash.jpg"
-                                    class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body text-center">
-                                 <br> 
-                                <b>Akash Barua</b>
-                                 <p>Frontend Developer</p>
-                            </div>
-                        </div>
-                    </div> -->
-                    <div style="width: 320px;" class="col mx-3">
-                        <div class="card w-100 text-white d-flex bg-success flex-column align-items-center justify-content-evenly" style="padding: 10px !important; width: 18rem;">
-                            <div>
-                                <img style="border-radius: 50%; width: 150px;"
-                                    src="./assets/images/members/anshul.jpg"
-                                    class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body text-center">
-                                <!-- <br> -->
-                                <b>Anshul Mishra</b>
-                                <!-- <p>Frontend Developer</p> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>             
-            </marquee> 
+  <div class="team-section" id="The-Team">
+        <div class="team-header">
+            <h3 class="team-title libre-baskerville-regular">Active Members</h3>
+            <div class="title-underline"></div>
         </div>
+
+        <div class="team-carousel-container">
+            <div class="team-carousel" id="teamCarousel">
+                <div class="team-card">
+                    <div class="card-inner">
+                        <img src="./assets/images/members/himanshu.jpg" alt="Himanshu Agrawal" class="member-image">
+                        <div class="member-info">
+                            <b class="member-name">Himanshu Agrawal</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="card-inner">
+                        <img src="./assets/images/members/jyesh.jpg" alt="Jayesh Shrivastava" class="member-image">
+                        <div class="member-info">
+                            <b class="member-name">Jayesh Shrivastava</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="card-inner">
+                        <img src="./assets/images/members/aparna.jpg" alt="Aparna Sharma" class="member-image">
+                        <div class="member-info">
+                            <b class="member-name">Aparna Sharma</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="card-inner">
+                        <img src="./assets/images/members/arpit.jpg" alt="Arpit Gupta" class="member-image">
+                        <div class="member-info">
+                            <b class="member-name">Arpit Gupta</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="card-inner">
+                        <img src="./assets/images/members/mohit.jpg" alt="Mohit Singh" class="member-image">
+                        <div class="member-info">
+                            <b class="member-name">Mohit Singh</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="team-card">
+                    <div class="card-inner">
+                        <img src="./assets/images/members/anshul.jpg" alt="Anshul Mishra" class="member-image">
+                        <div class="member-info">
+                            <b class="member-name">Anshul Mishra</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-arrow prev" id="prevBtn" aria-label="Previous Member">‹</button>
+            <button class="carousel-arrow next" id="nextBtn" aria-label="Next Member">›</button>
+        </div>
+    </div>
 
         
         <div class="container  text-center Testimonials overflow-x-hidden mt-5">
@@ -624,9 +578,7 @@ Amity University</p>
         </div>
     </main>
 
-
-    <!--  -->
-    <div id="footer"></div>
+<div id="footer"></div>
 
     <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="./assets/js/script.js"></script>
@@ -648,6 +600,139 @@ Amity University</p>
 
     loadComponent('#header', '_header.html');
     loadComponent('#footer', '_footer.html');
+  </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const carousel = document.getElementById('teamCarousel');
+    const container = document.querySelector('.team-carousel-container');
+    const nextBtn = document.getElementById('nextBtn');
+    const prevBtn = document.getElementById('prevBtn');
+
+    const initialCards = Array.from(carousel.children);
+    if (initialCards.length === 0) return;
+
+    const membersCount = initialCards.length;
+    const cardWidth = 250 + 60; // card min-width + (margin * 2)
+
+    let currentIndex = membersCount;
+    let autoScrollInterval;
+    let isTransitioning = false;
+
+    // 1. Clone cards and set up listeners
+    function setupCarousel() {
+        // Prepend clones for a seamless start
+        initialCards.slice().reverse().forEach(card => {
+            carousel.prepend(card.cloneNode(true));
+        });
+        // Append clones for a seamless end
+        initialCards.forEach(card => {
+            carousel.appendChild(card.cloneNode(true));
+        });
+
+        // ** NEW: Add click event listeners to all cards (including clones) **
+        const allCards = document.querySelectorAll('.team-card');
+        allCards.forEach((card, index) => {
+            card.addEventListener('click', () => {
+                // Do nothing if the carousel is already moving or the card is already centered
+                if (isTransitioning || index === currentIndex) return;
+                
+                // Move to the clicked card's position
+                moveTo(index);
+            });
+        });
+
+        // Position the carousel to show the first "real" card
+        const initialOffset = - (currentIndex * cardWidth) + (container.offsetWidth / 2 - cardWidth / 2);
+        carousel.style.transition = 'none';
+        carousel.style.transform = `translateX(${initialOffset}px)`;
+        
+        setTimeout(() => {
+             carousel.style.transition = 'transform 0.6s ease-in-out';
+             updateCenterClass();
+        }, 50);
+    }
+    
+    // 2. Core function to move the carousel
+    function moveTo(index) {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        
+        const offset = - (index * cardWidth) + (container.offsetWidth / 2 - cardWidth / 2);
+        carousel.style.transform = `translateX(${offset}px)`;
+        currentIndex = index;
+        updateCenterClass();
+    }
+
+    // 3. Update which card has the 'center' class
+    function updateCenterClass() {
+        const allCards = document.querySelectorAll('.team-card');
+        const logicalIndex = currentIndex % membersCount;
+        
+        allCards.forEach((card, i) => {
+            if (i % membersCount === logicalIndex) {
+                 card.classList.add('center');
+            } else {
+                 card.classList.remove('center');
+            }
+        });
+    }
+
+    // 4. Handle seamless loop reset after a transition ends
+    carousel.addEventListener('transitionend', () => {
+        isTransitioning = false;
+        
+        const needsReset = currentIndex >= membersCount * 2 || currentIndex < membersCount;
+
+        if (needsReset) {
+            if (currentIndex >= membersCount * 2) {
+                currentIndex -= membersCount;
+            } else if (currentIndex < membersCount) {
+                currentIndex += membersCount;
+            }
+
+            const offset = - (currentIndex * cardWidth) + (container.offsetWidth / 2 - cardWidth / 2);
+            carousel.style.transition = 'none';
+            carousel.style.transform = `translateX(${offset}px)`;
+            
+            updateCenterClass(); 
+
+            setTimeout(() => {
+                carousel.style.transition = 'transform 0.6s ease-in-out';
+            }, 20);
+        }
+    });
+
+    // 5. Event Listeners and Auto-scroll
+    function moveNext() { moveTo(currentIndex + 1); }
+    function movePrev() { moveTo(currentIndex - 1); }
+
+    // When user interacts, reset the auto-scroll timer
+    function handleInteraction(moveFunction) {
+        stopAutoScroll();
+        moveFunction();
+        startAutoScroll();
+    }
+
+    nextBtn.addEventListener('click', () => handleInteraction(moveNext));
+    prevBtn.addEventListener('click', () => handleInteraction(movePrev));
+
+    function startAutoScroll() {
+        stopAutoScroll();
+        autoScrollInterval = setInterval(moveNext, 3000);
+    }
+
+    function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+    }
+
+    container.addEventListener('mouseenter', stopAutoScroll);
+    container.addEventListener('mouseleave', startAutoScroll);
+
+    // Initial setup
+    setupCarousel();
+    startAutoScroll();
+});
   </script>
 </body>
 
