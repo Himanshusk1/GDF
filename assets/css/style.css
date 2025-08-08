@@ -1,5 +1,7 @@
 :root {
     --yellow: #ffbd07;
+    --gurukul-green: #228B22;
+    --gurukul-orange: #FF8C00;
 }
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
@@ -417,4 +419,118 @@ body {
 
 .carousel-arrow.next {
     right: 20px;
+}
+
+/* Pre-loader Styles */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, var(--gurukul-green) 0%, var(--gurukul-orange) 100%);
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+}
+
+#preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader-content {
+    text-align: center;
+    color: white;
+    max-width: 700px; /* Increased from 600px to 700px */
+    padding: 2.5rem; /* Increased from 2rem to 2.5rem */
+}
+
+.preloader-logo {
+    margin-bottom: 2rem;
+}
+
+               .logo-image {
+            width: 150px; /* Increased from 120px to 150px */
+            height: auto;
+            filter: brightness(0) invert(1);
+            animation: logo-pulse 3s ease-in-out infinite; /* Increased from 2s to 3s for slower pulse */
+        }
+
+@keyframes logo-pulse {
+    0%, 100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.8;
+    }
+}
+
+.preloader-tagline {
+    margin-bottom: 2rem;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+               #tagline-text {
+            font-size: 1.8rem; /* Increased from 1.5rem to 1.8rem */
+            font-weight: 500;
+            line-height: 1.4;
+            opacity: 1;
+            transition: opacity 0.8s ease-in-out; /* Increased from 0.5s to 0.8s for smoother transitions */
+            font-family: "Libre Baskerville", serif;
+        }
+
+#tagline-text.fade {
+    opacity: 0;
+}
+
+.preloader-spinner {
+    width: 50px; /* Increased from 40px to 50px */
+    height: 50px; /* Increased from 40px to 50px */
+    border: 4px solid rgba(255, 255, 255, 0.3); /* Increased border from 3px to 4px */
+    border-top: 4px solid white; /* Increased border from 3px to 4px */
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive adjustments for pre-loader */
+@media screen and (max-width: 768px) {
+    .preloader-content {
+        padding: 1.5rem; /* Increased from 1rem to 1.5rem */
+    }
+    
+    .logo-image {
+        width: 100px; /* Increased from 80px to 100px */
+    }
+    
+    #tagline-text {
+        font-size: 1.4rem; /* Increased from 1.2rem to 1.4rem */
+    }
+    
+    .preloader-tagline {
+        min-height: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #tagline-text {
+        font-size: 1.2rem; /* Increased from 1rem to 1.2rem */
+    }
+    
+    .preloader-tagline {
+        min-height: 40px;
+    }
 }

@@ -99,3 +99,106 @@ btnRight.addEventListener('click', (e)=> {
 // // });
 
 // // our-Team-member-section...
+
+// Pre-loader functionality
+const taglines = [
+    "Empowering youth, one skill at a time.",
+    "From comfort to growth – your journey starts here.",
+    "Turning potential into success stories.",
+    "Where dreams meet real-world opportunities.",
+    "Bridging gaps between learning and doing.",
+    "Nurturing talent for a brighter tomorrow.",
+    "Opportunities don't happen. We create them.",
+    "From tier-2 towns to global stages."
+];
+
+let currentTaglineIndex = Math.floor(Math.random() * taglines.length); // Start with random tagline
+let taglineInterval;
+let preloaderStartTime;
+let minimumDisplayTime = 3000; // Minimum 3 seconds display time
+const taglineElement = document.getElementById('tagline-text');
+const preloader = document.getElementById('preloader');
+
+// Function to rotate taglines
+function rotateTaglines() {
+    if (taglineElement) {
+        // Fade out current tagline
+        taglineElement.classList.add('fade');
+        
+                       setTimeout(() => {
+                   // Update tagline text
+                   currentTaglineIndex = (currentTaglineIndex + 1) % taglines.length;
+                   taglineElement.textContent = taglines[currentTaglineIndex];
+                   
+                   // Fade in new tagline
+                   taglineElement.classList.remove('fade');
+               }, 400); // Increased from 250ms to 400ms for smoother transition
+    }
+}
+
+               // Start tagline rotation
+        function startTaglineRotation() {
+            if (taglineElement) {
+                // Start the first rotation immediately
+                setTimeout(rotateTaglines, 2000); // First rotation after 2 seconds
+                // Then continue with regular intervals
+                taglineInterval = setInterval(rotateTaglines, 4000); // Continue every 4 seconds
+            }
+        }
+
+// Stop tagline rotation and hide preloader
+function hidePreloader() {
+    // Check if minimum display time has passed
+    const currentTime = Date.now();
+    const timeElapsed = currentTime - preloaderStartTime;
+    
+    if (timeElapsed < minimumDisplayTime) {
+        // If minimum time hasn't passed, wait for the remaining time
+        setTimeout(hidePreloader, minimumDisplayTime - timeElapsed);
+        return;
+    }
+    
+    // Stop the tagline rotation
+    if (taglineInterval) {
+        clearInterval(taglineInterval);
+    }
+    
+    // Add fade-out class to preloader
+    if (preloader) {
+        preloader.classList.add('fade-out');
+        
+        // Remove preloader from DOM after fade-out completes
+        setTimeout(() => {
+            if (preloader && preloader.parentNode) {
+                preloader.parentNode.removeChild(preloader);
+            }
+        }, 600); // Match the CSS transition duration
+    }
+}
+
+// Initialize preloader when DOM is ready
+document.addEventListener('DOMContentLoaded', function() {
+    preloaderStartTime = Date.now(); // Record start time
+    
+    // Set initial tagline
+    if (taglineElement) {
+        taglineElement.textContent = taglines[currentTaglineIndex];
+    }
+    
+    // Start rotation after a short delay to ensure smooth first transition
+    setTimeout(() => {
+        startTaglineRotation();
+    }, 1000); // Start rotation after 1 second
+});
+
+// Hide preloader when page is fully loaded
+window.addEventListener('load', function() {
+    hidePreloader();
+});
+
+// Fallback: Hide preloader after 8 seconds if load event doesn't fire
+setTimeout(function() {
+    if (preloader && !preloader.classList.contains('fade-out')) {
+        hidePreloader();
+    }
+}, 8000); // Increased from 5s to 8s to ensure minimum display time
