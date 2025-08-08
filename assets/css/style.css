@@ -104,7 +104,59 @@ nav{
 }
 /* CSS for Navbar of the website... */
 
+/* CSS dark-mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: white;
+  }
 
+  .dark-mode .navbar {
+    background-color: #1f1f1f !important ;
+    color: white;
+  }
+
+  .dark-mode .nav-link {
+    color: #f1f1f1 !important;
+  }
+
+  .dark-mode .navbar-brand {
+    color: white !important;
+  }
+
+  .dark-mode .btn-primary {
+    background-color: #333 !important;
+    border-color: #555 !important;
+  }
+
+  .dark-mode .bg-white {
+  background-color: #1f1f1f !important;
+}
+
+.dark-mode .text-green,
+.dark-mode .text-orange,
+.dark-mode .text-success {
+  color: #cbd5e1 !important; /* Lighter text for dark background */
+}
+
+.dark-mode .bg-yellow,
+.dark-mode .bg-orange,
+.dark-mode .bg-success {
+  background-color: #333 !important;
+}
+
+.dark-mode .card {
+  background-color: #2d2d2d !important;
+  color: white;
+  border: 1px solid #555;
+}
+
+.dark-mode .para {
+  color: rgb(20, 19, 19);
+}
+
+.dark-mode .about_heading{
+  color: rgb(20, 19, 19);
+}
 
 /* Main index page CSS... */
 .times-roman-font {
