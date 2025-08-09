@@ -15,6 +15,98 @@
     <link href="./assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <style>
+        /* Wrapper section */
+#Why-Gurukul {
+  background-color: #b9aaaa;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  overflow-x: hidden;
+}
+
+/* Card container layout */
+#Why-Gurukul .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0 1rem;
+}
+
+/* Individual cards */
+.why-gurukul-cards .card {
+  width: 300px;
+  height: 250px;
+  padding: 15px;
+  background-color: #70706d; /* light warm yellow */
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(128, 126, 110, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hover effect */
+.why-gurukul-cards .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 0 25px rgba(215, 214, 204, 0.7);
+}
+
+/* Card image */
+.why-gurukul-cards .card img {
+  width: 60px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+/* Card text */
+.why-gurukul-cards .card-text {
+  color: #fff;
+  text-align: center;
+  font-size: 1.25rem;
+}
+
+/* Heading */
+#Why-Gurukul .libre-baskerville-regular {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.small-card-text {
+  font-size: 1rem; /* or try 0.95rem, 14px, etc. */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .why-gurukul-cards .card {
+    height: 330px;
+  }
+
+  #Why-Gurukul .libre-baskerville-regular {
+    font-size: 2rem;
+  }
+
+  .why-gurukul-cards .card-text {
+    font-size: 1rem;
+  }
+}
+
+.card-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+  padding: 0 10px;
+}
+
+
+    </style>
 </head>
 
 <body class="overflow-x-hidden">
@@ -193,7 +285,7 @@
 
         <div class="Key-contributions bg-dark text-center w-100 Key overflow-x-hidden" id="Why-Gurukul">
         <div class="text-white h1 pb-1 pt-5 overflow-x-hidden libre-baskerville-regular">Why Gurukul?</div>
-            <div  class="flex-row flex-wrap flex-md-row w-100 d-flex overflow-x-hidden align-items-center px-2 gap-5 justify-content-center  pb-5">
+        <div class="card-container">
                 <div  class="small mt-md-2 mt-lg-5 mt-sm-2 mt-0  why-gurukul-cards">
                     <div style="width: 300px !important; height: 250px;" class="card why-gurukul-cards-responsive w-100 shadow-yellow" style="padding: 5px !important;">
                         <div class="mt-lg-5 mt-sm-0">
@@ -201,7 +293,7 @@
                             <!-- <i class="fa-solid fa-book" style="font-size: 100px"></i> -->
                         </div>
                         <div class="card-body">
-                            <div class="card-text text-heading-small fw-bold fs-3">Workshops & Fun Events 
+                            <div class="card-text text-heading-small fw-bold small-card-text">Workshops & Fun Events 
 </div>
                         </div>
                     </div>
@@ -213,7 +305,7 @@
                         <!-- <i class="fa-solid fa-tv" style="font-size: 100px"></i> -->
                         </div>
                         <div class="card-body">
-                            <div class="card-text text-heading-small fw-bold fs-3">Internships & Job Opportunities</div>
+                            <div class="card-text text-heading-small fw-bold small-card-text">Internships & Job Opportunities</div>
                         </div>
                     </div>
                 </div>
@@ -224,7 +316,7 @@
                         <!-- <i class="fa-solid fa-arrow-up-right-dots" style="font-size: 100px"></i> -->
                         </div>
                         <div class="card-body">
-                            <div class="card-text text-heading-small fw-bold fs-3">Career & Education Counseling</div>
+                            <div class="card-text text-heading-small fw-bold small-card-text">Career & Education Counseling</div>
                         </div>
                     </div>
                 </div>
@@ -235,7 +327,7 @@
                             <!-- <i class="fa-solid fa-book" style="font-size: 100px"></i> -->
                         </div>
                         <div class="card-body">
-                            <div class="card-text text-heading-small fw-bold fs-3">Placement & Training Support 
+                            <div class="card-text text-heading-small fw-bold small-card-text">Placement & Training Support 
 </div>
                         </div>
                     </div>
@@ -247,7 +339,7 @@
                         <!-- <i class="fa-solid fa-tv" style="font-size: 100px"></i> -->
                         </div>
                         <div class="card-body">
-                            <div class="card-text text-heading-small fw-bold fs-3">Industrial Visits
+                            <div class="card-text text-heading-small fw-bold small-card-text">Industrial Visits
 </div>
                         </div>
                     </div>
@@ -259,7 +351,7 @@
                         <!-- <i class="fa-solid fa-arrow-up-right-dots" style="font-size: 100px"></i> -->
                         </div>
                         <div class="card-body">
-                            <div class="card-text text-heading-small fw-bold fs-3">Mental Health Support 
+                            <div class="card-text text-heading-small fw-bold small-card-text">Mental Health Support 
 </div>
                         </div>
                     </div>
@@ -271,7 +363,7 @@
                             <!-- <i class="fa-solid fa-book" style="font-size: 100px"></i> -->
                         </div>
                         <div class="card-body">
-                            <div class="card-text text-heading-small fw-bold fs-3">Networking Opportunities</div>
+                            <div class="card-text text-heading-small fw-bold small-card-text">Networking Opportunities</div>
                         </div>
                     </div>
                 </div>
@@ -282,7 +374,7 @@
                         <!-- <i class="fa-solid fa-tv" style="font-size: 100px"></i> -->
                         </div>
                         <div class="card-body">
-                            <div class="card-text text-heading-small fw-bold fs-3">Adventure Trips</div>
+                            <div class="card-text text-heading-small fw-bold small-card-text">Adventure Trips</div>
                         </div>
                     </div>
                 </div>
