@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #fff, #f9f9f9);
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: green;
+  }
+  .logo span {
+    color: orange;
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  .navbar ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+  }
+  
+  /* Auth Container */
+  .auth-container {
+    max-width: 350px;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    margin: 60px auto;
+    text-align: center;
+  }
+  .auth-container h2 {
+    margin-bottom: 20px;
+    color: green;
+  }
+  
+  /* Form Inputs */
+  input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+  }
+  .password-wrapper {
+    position: relative;
+  }
+  .toggle-password {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+  
+  /* Button */
+  .btn-primary {
+    width: 100%;
+    background: #ffcc00;
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  .btn-primary:hover {
+    background: #ffb700;
+  }
+  
+  .switch-link {
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  .switch-link a {
+    color: orange;
+    text-decoration: none;
+  }
+  .switch-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 15px;
+    background: white;
+    font-size: 0.9rem;
+    color: #555;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
