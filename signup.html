@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up | Gurukul Dream Foundation</title>
+  <link rel="stylesheet" href="auth.css">
+</head>
+<body>
+
+<!-- Signup Form -->
+<div class="auth-container">
+  <h2>Create Account</h2>
+  <form id="signupForm">
+    <input type="text" id="name" placeholder="Full Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <div class="password-wrapper">
+      <input type="password" id="password" placeholder="Password" required>
+      <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+    </div>
+    <div class="password-wrapper">
+      <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
+      <span class="toggle-password" onclick="togglePassword('confirmPassword')">👁️</span>
+    </div>
+    <button type="submit" class="btn-primary">Sign Up</button>
+    <p class="switch-link">Already have an account? <a href="signin.html">Sign In</a></p>
+  </form>
+</div>
+
+
+
+<script>
+function togglePassword(id) {
+  let input = document.getElementById(id);
+  input.type = input.type === "password" ? "text" : "password";
+}
+
+document.getElementById("signupForm").addEventListener("submit", function(e){
+  e.preventDefault();
+  let name = document.getElementById("name").value;
+  let email = document.getElementById("email").value;
+  let pass = document.getElementById("password").value;
+  let confirmPass = document.getElementById("confirmPassword").value;
+
+  if(pass !== confirmPass){
+    alert("❌ Passwords do not match!");
+    return;
+  }
+
+  localStorage.setItem("userEmail", email);
+  localStorage.setItem("userPass", pass);
+  alert("✅ Account created successfully!");
+  window.location.href = "signin.html";
+});
+</script>
+</body>
+</html>
