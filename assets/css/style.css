@@ -105,57 +105,88 @@ nav{
 /* CSS for Navbar of the website... */
 
 /* CSS dark-mode */
-  body.dark-mode {
-    background-color: #121212;
-    color: white;
-  }
-
-  .dark-mode .navbar {
-    background-color: #1f1f1f !important ;
-    color: white;
-  }
-
-  .dark-mode .nav-link {
-    color: #f1f1f1 !important;
-  }
-
-  .dark-mode .navbar-brand {
-    color: white !important;
-  }
-
-  .dark-mode .btn-primary {
-    background-color: #333 !important;
-    border-color: #555 !important;
-  }
-
-  .dark-mode .bg-white {
-  background-color: #1f1f1f !important;
+ body.dark-mode {
+  background-color: #0d1117 !important; /* Deep dark bg */
+  color: #e6edf3 !important; /* Off-white text */
 }
 
+/* Navbar */
+.dark-mode .navbar {
+  background-color: #161b22 !important;
+  color: #f0f6fc !important;
+  border-bottom: 1px solid #30363d;
+}
+
+.dark-mode .nav-link,
+.dark-mode .navbar-brand {
+  color: #e6edf3 !important;
+}
+.dark-mode .nav-link:hover {
+  color: #58a6ff !important; /* Accent Blue */
+}
+
+/* Buttons */
+.dark-mode .btn-primary {
+  background-color: #21262d !important;
+  border-color: #30363d !important;
+  color: #f0f6fc !important;
+}
+.dark-mode .btn-primary:hover {
+  background-color: #2d333b !important;
+}
+
+/* Cards, Containers, Sections */
+.dark-mode .card,
+.dark-mode .container {
+  background-color: #161b22 !important;
+  color: #e6edf3 !important;
+  border: 1px solid #30363d !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+/* Text Variants */
 .dark-mode .text-green,
 .dark-mode .text-orange,
 .dark-mode .text-success {
-  color: #cbd5e1 !important; /* Lighter text for dark background */
+  color: #9ecbff !important; /* Muted blueish accent */
 }
 
+.dark-mode .text-success-light {
+  color: #3fb950 !important; /* Green accent */
+}
+.dark-mode .text-orange-light {
+  color: #ff7b72 !important; /* Orange accent */
+}
+
+/* Background Variants */
+.dark-mode .bg-white,
 .dark-mode .bg-yellow,
 .dark-mode .bg-orange,
 .dark-mode .bg-success {
-  background-color: #333 !important;
+  background-color: #21262d !important;
 }
 
-.dark-mode .card {
-  background-color: #2d2d2d !important;
-  color: white;
-  border: 1px solid #555;
+/* Footer */
+.dark-mode footer {
+  background-color: #161b22 !important;
+  color: #c9d1d9 !important;
+  border-top: 1px solid #30363d;
 }
 
-.dark-mode .para {
-  color: rgb(20, 19, 19);
+.dark-mode .social-media-links a:hover {
+  background-color: rgba(88, 166, 255, 0.2) !important;
+  color: #58a6ff !important;
 }
 
-.dark-mode .about_heading{
-  color: rgb(20, 19, 19);
+/* Scrollbar */
+.dark-mode *::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+  background-color: #161b22;
+}
+.dark-mode *::-webkit-scrollbar-thumb {
+  background-color: #30363d;
+  border-radius: 5px;
 }
 
 /* Main index page CSS... */
